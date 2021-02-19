@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(209, 112, 32, 0.411);
+    padding: 10px 10%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link a:hover {
+    color: #595f23;
+}
+
