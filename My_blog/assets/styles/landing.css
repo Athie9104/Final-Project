@@ -1,0 +1,24 @@
+.landing {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: khaki;
+    animation: backgroundChange 10s linear infinite;
+  }
+
+  .landing h1 {
+      border-top: 0.5px solid grey;
+      border-bottom: 0.5px solid grey;
+  }
+  
+  @keyframes backgroundChange {
+    from {background-color: khaki;}
+    to {background-color:navajowhite;}
+    to {background-color: rgba(165, 42, 42, 0.459);}
+
+  }
+  
