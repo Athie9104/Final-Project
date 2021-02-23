@@ -1,0 +1,9 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 16px;
+    background-color: navajowhite;
+    height: 100vh;
+}
+

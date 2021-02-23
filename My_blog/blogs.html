@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
     <link rel="stylesheet" href="./assets/styles/navigation.css">
+    <link rel="stylesheet" href="./assets/styles/carousel.css">
+    <link rel="stylesheet" href="./assets/styles/section.css">
+    <link rel="stylesheet" href="./assets/styles/searchbar.css">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome">
 </head>
 <body>
     <nav class="navbar">
@@ -15,8 +21,27 @@
             <li class="nav-link"><a href="./blogs.html">Blogs</a></li>
             <li class="nav-link"><a href="./blog.html">Blog</a></li>
             <li class="nav-link"><a href="./contact.html">contact us</a></li>
+            <input type="text" placeholder="Search...">
         </ul>  
         <button class="hamburger" onclick=""></button> 
     </nav>
+
+    <section class="section">
+    <!-- Carousel -->
+    <div id="carousel">
+        <!-- Carousel Container -->
+        <div id="carousel-container"></div>
+        <!-- Carousel Bullets -->
+        <div id="carousel-bullets"></div>
+        <!-- Carousel Buttons -->
+        <button id="carousel-left" onclick="changeSlide(-1)">
+        <i class="fas fa-angle-left"></i>
+        </button>
+        <button id="carousel-right" onclick="changeSlide(1)">
+        <i class="fas fa-angle-right"></i>
+        </button>
+    </div>
+</section>
+    <script src="./assets/scripts/carousel.js"></script>
 </body>
 </html>
