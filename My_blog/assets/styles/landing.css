@@ -1,5 +1,6 @@
 .landing {
     height: 40vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     display: flex;

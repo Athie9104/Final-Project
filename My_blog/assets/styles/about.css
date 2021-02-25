@@ -4,15 +4,26 @@
     justify-content: space-between;
     padding: 16px 16px;
     background-color: navajowhite;
-    height: 60vh;
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
 }
 
 .about-items {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     padding: 16px 16px;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 563px){
+    .about-items {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .about-items > div,
+    .about-items > img {
+        width: 100%;
+    }
 }
