@@ -1,0 +1,12 @@
+.blogs {
+    background-image: url(../images/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 16px;
+    height: 100vh;
+}

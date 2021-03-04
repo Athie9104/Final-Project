@@ -1,25 +1,34 @@
+
 .landing {
     height: 40vh;
     width: 100%;
     background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: khaki;
-    animation: backgroundChange 10s linear infinite;
+    align-self: center;
+    background-image: url(../images/bg.webp);
+
+    /* animation: backgroundChange 10s linear infinite; */
   }
 
   .landing h1 {
+    background-color: rgba(185, 116, 14, 0.733);
       border-top: 0.5px solid grey;
       border-bottom: 0.5px solid grey;
+      align-content: center;
+      align-items: center;
+  }
+
+  .landing h1 {
+    color:  white;
   }
   
-  @keyframes backgroundChange {
+  /* @keyframes backgroundChange {
     from {background-color: khaki;}
     to {background-color:navajowhite;}
     to {background-color: rgba(165, 42, 42, 0.459);}
 
-  }
+  } */
   

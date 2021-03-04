@@ -2,39 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+   }
+
+
 .section {
+    background-image: url(../images/contact-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 16px;
-    background-color: navajowhite;
     height: 100vh;
-}
-
-/* Contact styling */
-.section-contact {
-    background-color: rgba(238, 194, 136, 0.952);
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 40%;
-    padding: 20px;
-}
-
-.section-contact input {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0px;
-}
-.section-contact textarea {
-    justify-content: space-between;
-    width: 30%;
 }
 
 /* Registration styling */
 .section-registration{
-    background-color: rgba(238, 194, 136, 0.952);
     display: flex;
     flex-direction: column; 
     width: 40%; 
@@ -46,10 +29,35 @@
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
+    color: white;
 }
 
 .section-registration input {
     display: flex;
     flex-direction: column;
-    margin: 10px 0px;   
+    margin: 10px 0px;
+    width: 20vw;   
+}
+
+/* Contact styling */
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+}
+
+.section-contact input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    width: 20vw;
+}
+.section-contact textarea {
+    justify-content: space-between;
+    width: 50%;
+}
+section h3 {
+    color: white;
 }
