@@ -1,7 +1,7 @@
 
 .landing {
     height: 40vh;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     align-items: center;
     align-self: center;
     background-image: url(../images/bg.webp);
-
+    font-family: 'Oswald', sans-serif;
     /* animation: backgroundChange 10s linear infinite; */
   }
 
@@ -19,9 +19,10 @@
       border-bottom: 0.5px solid grey;
       align-content: center;
       align-items: center;
+      color:  white;
   }
 
-  .landing h1 {
+  .landing h3 {
     color:  white;
   }
   

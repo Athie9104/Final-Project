@@ -1,19 +1,53 @@
 .about {
     display: block;
-    justify-content: space-between;
-    padding: 16px 16px;
     width: 100%;
-    height: 50vw;
+    height: 10vw;
     background-color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
-.about-items {
+/* Contact styling */
+.about-contact {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    padding: 16px 16px;
-    min-width: 300px;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    padding: 20px;
+    background-color: chocolate;
+}
+
+.about-contact input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    width: 60vw;
+    height: 5vh;
+}
+.about-contact textarea {
+    margin: 10px 8px;
+    width: 60vw;
+    height: 40vh;
+}
+.about-contact .submit {
+    width: 100px;
+    background-color: black;
+    color: chocolate;
+    margin: auto;
+}
+
+.form-container{
+    margin: auto;
+}
+.about-contact > h3 {
+    text-align: center;
+}
+.about h3 {
+    color: black;
+    text-align: center;
 }
 
 /* @media screen and (max-width: 563px){
@@ -27,7 +61,4 @@
          width: 100%; }
 } */
 
-.about h3 {
-    color: black;
 
-}
