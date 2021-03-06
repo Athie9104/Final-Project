@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./assets/styles/carousel.css">
     <link rel="stylesheet" href="./assets/styles/blogs.css">
     <link rel="stylesheet" href="./assets/styles/searchbar.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+
     <script src="https://kit.fontawesome.com/206b3bb72f.js" crossorigin="anonymous"></script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome">
@@ -27,21 +31,33 @@
     </nav>
 
     <section class="blogs">
-    <!-- Carousel -->
-    <div id="carousel">
-        <!-- Carousel Container -->
-        <div id="carousel-container"></div>
-        <!-- Carousel Bullets -->
-        <div id="carousel-bullets"></div>
-        <!-- Carousel Buttons -->
-        <button id="carousel-left" onclick="changeSlide(-1)">
-        <i class="fas fa-angle-left"></i>
-        </button>
-        <button id="carousel-right" onclick="changeSlide(1)">
-        <i class="fas fa-angle-right"></i>
-        </button>
-    </div>
+        <!-- Carousel -->
+        <div id="carousel">
+            <!-- Carousel Container -->
+            <div id="carousel-container"></div>
+            <!-- Carousel Bullets -->
+            <div id="carousel-bullets"></div>
+            <!-- Carousel Buttons -->
+            <button id="carousel-left" onclick="changeSlide(-1)">
+            <i class="fas fa-angle-left"></i>
+            </button>
+            <button id="carousel-right" onclick="changeSlide(1)">
+            <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+    </section>
+    <section class="footer">
+        <ul class="social">
+            <li><a target="_blank" href="https://twitter.com/Athie_G" class="icon fa-twitter"><span class="label">Twitter</span></a></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/athenkosi-gongotha-986050197/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a target="_blank" href="https://github.com/Athie9104" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/athenkosi_g/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><p>&copy; 2020 All rights reserved. @Xhosa Tradition And Food. All rights reserved</p></li>
+        </ul>
+    </section>
+
 </section>
     <script src="./assets/scripts/carousel.js"></script>
+    <script src="./assets/scripts/fetch-images.js"></script>
 </body>
 </html>

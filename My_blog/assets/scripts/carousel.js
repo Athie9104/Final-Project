@@ -2,38 +2,15 @@
 let slidesContainer = document.getElementById("carousel-container");
 let bulletsContainer = document.getElementById("carousel-bullets");
 
-// Content for slides
-let slideContent = [
-  {
-    title: "Title1",
-    subtitle: "Subtitle1",
-    description:
-      "Decription1",
-    image: ""
-  },
-  {
-    title: "Title2",
-    subtitle: "Subtitle2",
-    description:
-      "Decription2",
-    image: ""
-  },
-  {
-    title: "Title3",
-    subtitle: "Subtitle3",
-    description:
-      "Decription3",
-    image: ""
-  },
-  {
-    title: "Title4",
-    subtitle: "Subtitle4",
-    description:
-      "Decription4",
-      image: ""
-  },
-
-];
+// get content for slides
+fetch("http://127.0.0.1:5000/show-images/")
+      .then((res) => res.json())
+      .then((data) => {
+        data.forEach((slide, index) => {
+          createBullet(index);
+          createSlide(slide, index);
+        });
+      });
 
 
 let totalSlides = slideContent.length;
