@@ -2,15 +2,53 @@
 let slidesContainer = document.getElementById("carousel-container");
 let bulletsContainer = document.getElementById("carousel-bullets");
 
-// get content for slides
-fetch("http://127.0.0.1:5000/show-images/")
-      .then((res) => res.json())
-      .then((data) => {
-        data.forEach((slide, index) => {
-          createBullet(index);
-          createSlide(slide, index);
-        });
-      });
+// Content for slides
+let slideContent = [
+  {
+    title: "1",
+    subtitle: "1",
+    description:
+      "1",
+    image: "assets/images/beauty-of-EC.jpeg"
+  },
+  {
+    title: "ipsum",
+    subtitle: "Lorem",
+    description:
+      "lorem ipsum",
+    image: "assets/images/umngqungqo.jpg"
+  },
+  {
+    title: "3",
+    subtitle: "3",
+    description:
+      "3",
+    image: "assets/images/lobola.jpeg"
+  },
+  {
+    title: "4 ",
+    subtitle: "4",
+    description:
+      " 4",
+      image: "assets/images/iduli.jpeg"
+  },
+
+  {
+    title: "5 ",
+    subtitle: "5",
+    description:
+      "5",
+    image: "assets/images/goat-slaughter.jpeg"
+  },
+
+  {
+    title: " 6",
+    subtitle: "6",
+    description:
+      "6",
+    image: "assets/images/xhosa-cuisine.jpeg"
+  },
+];
 
 
 let totalSlides = slideContent.length;

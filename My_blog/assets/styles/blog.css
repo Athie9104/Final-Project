@@ -1,12 +1,32 @@
 .blogs {
-    background-image: url(../images/blog-bg.jpg);
+    background-image: url(../images/blog.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 16px;
     height: 100vh;
+}
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    padding: 20px;
+    background-color: chocolate;
+}
+.blog-post input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    width: 60vw;
+    height: 5vh;
+}
+.blog-post textarea {
+    margin: 10px 8px;
+    width: 60vw;
+    height: 40vh;
 }

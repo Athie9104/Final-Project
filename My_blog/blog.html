@@ -22,7 +22,8 @@
     <nav class="navbar">
         <img src="#" alt="Logo" class="logo">
         <ul class="nav-links">
-            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./index.html">Log in</a></li>
+            <li class="nav-link"><a href="./home.html">Home</a></li>
             <li class="nav-link"><a href="./blogs.html">Blogs</a></li>
             <li class="nav-link"><a href="./blog.html">Blog</a></li>
             <li class="nav-link"><a href="./contact.html">contact us</a></li>
@@ -32,6 +33,23 @@
     </nav>
     <section class="blogs">
 
+        <form action="blog-post">
+            <h3>Write your blog</h3>
+            <span>Fullname</span>
+            <input type="text" name="name">
+            <span>Your blog</span>
+            <textarea name="blog" id="" cols="30" rows="10"></textarea>
+            <input type="text" name="submit" value="Post">
+            
+        </form>
+
+    </section>
+
+    <section class="blogs">
+        <div id="blogz">
+
+        </div>
+        
     </section>
 
     <section class="footer">
@@ -43,5 +61,6 @@
             <li><p>&copy; 2020 All rights reserved. @Xhosa Tradition And Food. All rights reserved</p></li>
         </ul>
     </section>
+    <script src="./assets/scripts/blog.js"></script>
 </body>
 </html>

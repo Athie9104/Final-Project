@@ -13,7 +13,7 @@ function addSubscribers() {
 
     console.log(user);
 
-    fetch("http://127.0.0.1:5000/add-new-subscriber/", {
+    fetch("https://sleepy-mountain-15774.herokuapp.com/add-new-subscriber/", {
         method: "POST",
         body: JSON.stringify(user),
         headers: {
