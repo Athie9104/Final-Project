@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./assets/styles/navigation.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+
     <script src="https://kit.fontawesome.com/206b3bb72f.js" crossorigin="anonymous"></script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome">
@@ -23,9 +26,6 @@
         <li class="nav-link"><a href="./blogs.html">Blogs</a></li>
         <li class="nav-link"><a href="./blog.html">Blog</a></li>
         <li class="nav-link"><a href="./contact.html">contact us</a></li>
-        <input type="text" placeholder="Search...">
-        <button type="submit"><i class="fa fa-search"></i></button>
-
     </ul>  
     <button class="hamburger" onclick=""></button> 
 </nav>
@@ -39,13 +39,26 @@
     </div> -->
     <!-- sign in -->
         <div class="container">
-        <div class="flex">
+            <h3>Log in</h3>
+            <div class="flex">
+                
+                <div class="login">
+                    <form onsubmit="event.preventDefault(); login()" class="login" id="login" class="form">
+                        <span>Email</span>
+                        <input type="text" name="email" id="">
+                        <span>Cell</span>
+                        <input type="text" name="cell" id="">
+                        <input class="button" type="submit" value="Login"><br>
+                        <a href="contact.html" id="account" class="trouble">Don't have an account yet?</a>
+                    </form>
 
-            <div class="content">
-                <button class="btn sign-in">Sign in</button>
-                <button class="btn sign-up">Sign up</button>
+                </div>
+
+                <!-- <div class="content">
+                    <button class="btn sign-in">Sign in</button>
+                    <button class="btn sign-up">Sign up</button>
+                </div> -->
             </div>
-        </div>
         </div>
     
     <section class="footer">
